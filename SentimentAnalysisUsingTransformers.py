@@ -1,3 +1,5 @@
+# Easy Sentiment Analysis with Pretrained transformer Model"
+
 from transformers import pipeline
 sentiment_analysis = pipeline(“sentiment-analysis”)
 pos_text = “I enjoy studying computational algorithms.”
@@ -9,3 +11,4 @@ print()
 result = sentiment_analysis(neg_text)[0]
 print("Label:", result['label'])
 print("Confidence Score:", result['score'])
+print("Done")
